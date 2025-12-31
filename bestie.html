@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Niyati ✨</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#fbc2eb,#a6c1ee);
+    overflow-x:hidden;
+}
+
+/* Cursor glow */
+.cursor-glow{
+    position:fixed;
+    width:120px;
+    height:120px;
+    background:radial-gradient(circle,rgba(255,255,255,0.4),transparent 60%);
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    z-index:999;
+}
+
+/* Floating shapes */
+.shape{
+    position:absolute;
+    border-radius:50%;
+    opacity:0.25;
+    animation:float 14s infinite ease-in-out;
+}
+.shape.one{width:220px;height:220px;background:#fff;top:10%;left:5%;}
+.shape.two{width:320px;height:320px;background:#ffdde1;bottom:10%;right:5%;animation-duration:18s;}
+.shape.three{width:180px;height:180px;background:#cfd9df;top:60%;left:70%;animation-duration:16s;}
+
+@keyframes float{
+    0%{transform:translateY(0)}
+    50%{transform:translateY(-50px)}
+    100%{transform:translateY(0)}
+}
+
+/* Sparkles */
+.sparkle{
+    position:absolute;
+    width:6px;
+    height:6px;
+    background:white;
+    border-radius:50%;
+    opacity:0.7;
+    animation:sparkle 5s infinite ease-in-out;
+}
+@keyframes sparkle{
+    0%{transform:scale(0.6);opacity:0.4}
+    50%{transform:scale(1.4);opacity:1}
+    100%{transform:scale(0.6);opacity:0.4}
+}
+
+/* Section */
+.section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.93);
+    max-width:720px;
+    width:100%;
+    padding:40px;
+    border-radius:26px;
+    text-align:center;
+    box-shadow:0 25px 45px rgba(0,0,0,0.15);
+    animation:fadeUp 1.6s ease forwards;
+}
+
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(40px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+/* Photo */
+.photo-wrapper{
+    width:160px;
+    height:160px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    padding:6px;
+    background:linear-gradient(135deg,#ff9aa2,#a6c1ee);
+    animation:glowRing 4s infinite alternate;
+}
+@keyframes glowRing{
+    from{box-shadow:0 0 15px rgba(255,94,120,0.4)}
+    to{box-shadow:0 0 30px rgba(166,193,238,0.7)}
+}
+.photo-wrapper img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    filter:brightness(1.05);
+}
+
+h1{
+    font-size:2.5rem;
+    color:#ff5e78;
+    margin-bottom:18px;
+    animation:glow 3s infinite alternate;
+}
+@keyframes glow{
+    from{text-shadow:0 0 8px #ff9aa2}
+    to{text-shadow:0 0 18px #ff5e78}
+}
+
+p{
+    font-size:1.08rem;
+    color:#444;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.highlight{
+    color:#ff5e78;
+    font-weight:600;
+}
+
+button{
+    padding:12px 26px;
+    border:none;
+    border-radius:30px;
+    background:#ff5e78;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    background:#ff3f63;
+    transform:scale(1.05);
+}
+
+.secret{
+    display:none;
+    margin-top:25px;
+    font-size:1.05rem;
+    color:#333;
+}
+
+.signature{
+    margin-top:32px;
+    font-size:0.95rem;
+    color:#777;
+}
+
+/* Responsive */
+@media(max-width:480px){
+    h1{font-size:1.9rem}
+    p{font-size:1rem}
+}
+</style>
+</head>
+
+<body>
+
+<div class="cursor-glow" id="glow"></div>
+
+<!-- Shapes -->
+<div class="shape one"></div>
+<div class="shape two"></div>
+<div class="shape three"></div>
+
+<!-- Sparkles -->
+<div class="sparkle" style="top:20%;left:30%"></div>
+<div class="sparkle" style="top:70%;left:20%"></div>
+<div class="sparkle" style="top:40%;left:80%"></div>
+<div class="sparkle" style="top:15%;left:60%"></div>
+<div class="sparkle" style="top:85%;left:55%"></div>
+
+<!-- Background music -->
+<audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/10/25/audio_946b6e9f6b.mp3" type="audio/mpeg">
+</audio>
+
+<section class="section">
+    <div class="card">
+
+        <!-- Photo -->
+        <div class="photo-wrapper">
+            <img src="niyati.jpg" alt="Niyati">
+        </div>
+
+        <h1>Niyati ✨</h1>
+
+        <p>
+            This page exists for one reason —
+            to remind you how <span class="highlight">important</span> you are.
+        </p>
+
+        <p>
+            Thank you for being my safe place,
+            for staying gentle in moments I didn’t even know how to explain.
+        </p>
+
+        <p class="highlight">
+            “Thanks for healing a boy who doesn’t even care  
+            about if there will be any tomorrow.”
+        </p>
+
+        <button onclick="reveal()">Tap for something honest 🤍</button>
+
+        <div class="secret" id="secret">
+            You didn’t fix me.  
+            You didn’t save me.  
+            You simply stayed — and that changed everything.
+        </div>
+
+        <div class="signature">
+            — Always grateful 🌙
+        </div>
+
+    </div>
+</section>
+
+<script>
+/* Cursor glow */
+document.addEventListener("mousemove", e => {
+    const glow = document.getElementById("glow");
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+});
+
+/* Music autoplay on interaction */
+document.addEventListener("click", () => {
+    const music = document.getElementById("bgMusic");
+    if (music.paused) music.play();
+});
+
+/* Secret reveal */
+function reveal(){
+    document.getElementById("secret").style.display = "block";
+}
+</script>
+
+</body>
+</html>
